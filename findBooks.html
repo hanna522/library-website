@@ -1,0 +1,100 @@
+<!--DOCTYPE html-->
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <section class="top">
+        <header>
+            <h1><a href="home.html">The Vallejo Public Library</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="findBooks.html">Search</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="explanation">
+        <section class="left">
+            <h2>Search & Loan books</h3>
+            <p>If you have a library card, you are able to request a book with the card number and book ID</p>
+            <a href="loanBooks.html"><button>Loan Books</button></a>
+        </section>
+        <section class="right">
+            <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png">
+        </section>
+    </section>
+
+    <section class="search">
+        <section class="searchType1">
+            <h4>Search by Title/Author</h4>
+            <form action="/search" method="get">
+                <input type="text" id="search" name="q" placeholder="Title or Author">
+                <input type="submit" value="Search">
+            </form>    
+        </section>
+        <section class="searchType2">
+            <h4>Search by Category</h4>
+            <ul>
+                <li><a href="Fantasy">Fantasy</a></li>
+                <li><a href="Novel">Novel</a></li>
+                <li><a href="Science">Science</a></li>
+                <li><a href="Self-Development">Self-Development</a></li>
+                <li><a href="Essay">Essay</a></li>
+            </ul>    
+        </section>
+    </section>
+
+    <section class="catalog">
+        <ul class="books">
+            <li>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/913C+MR3S5L._AC_UL210_SR195,210_.jpg">
+                <section class="info">
+                    <span class="Title">Apple tree</span>
+                    <span class="Author">John Doe</span>
+                    <span class="Category">Novel</span>
+                    <span class="BookID">BK0001</span>
+                    <span class="AvailableNTotal">2/3</span>    
+                </section>
+            </li>
+            <li>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81AHTyq2wVL._AC_UL210_SR195,210_.jpg">
+                <section class="info">
+                    <span class="Title">Amazing Bread</span>
+                    <span class="Author">Jackson Field</span>
+                    <span class="Category">Fantasy</span>
+                    <span class="BookID">BK0002</span>
+                    <span class="AvailableNTotal">2/2</span>
+                </section>
+            </li>
+            <li>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91jbHTNpy6L._AC_UL420_SR390,420_.jpg">
+                <section class="info">
+                    <span class="Title">Butterfly Analysis</span>
+                    <span class="Author">Miriam Mercedes</span>
+                    <span class="Category">Science</span>
+                    <span class="BookID">BK0003</span>
+                    <span class="AvailableNTotal">3/6</span>    
+                </section>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+        <p>Address : 505 Santa Clara Street, Vallejo, CA 94590</p>
+        <p>Opening Hours : Mon - Fri, 9:00 AM - 5:00 PM</p>
+        <p>Email : vallejolib@gmail.com</p>
+    </footer>
+
+    <!-- Additional scripts or external references can be added here -->
+</body>
+</html>

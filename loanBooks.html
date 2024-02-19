@@ -1,0 +1,64 @@
+<!--DOCTYPE html-->
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <section class="top">
+        <header>
+            <h1><a href="home.html">The Vallejo Public Library</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="findBooks.html">Search</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="explanation">
+        <section class="left">
+            <h2>Loan books you want</h3>
+            <p>Please read and follow the steps to loan books</p>
+            <a href="findBooks.html"><button>Find Books</button></a>
+        </section>
+        <section class="right">
+            <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png">
+        </section>
+    </section>
+    
+    <section class="content">
+        <h3>How to Loan Books?</h3>
+        <ol>
+            <li>If you have a library card, you are able to request a book online if it's available.</li>
+                <ul>
+                    <li>* If you don't have a library card, go to a <a href="register.html">"Register" menu</a> and fill a form to get a library card.</li>
+                    <li>* You can check availability of the book at the <a href="findBooks.html">"Find Books"</a> menu.</li>
+                </ul>
+            <li>Write your library card number and the book's ID below to reserve the book.</li>
+            <li>After reserving the book, go to the library and pick up the reserved book.</li>
+        </ol>
+    </section>
+
+    <section class="reserve">
+        <form action="/search" method="get" id="reserve">
+            <p>Library Card Number: <input type="text" id="userID" name="q" placeholder="Enter Library Card Number">
+                Book ID: <input type="text" id="bookID" name="p" placeholder="Enter Book ID"></p>
+            <input type="submit" value="Reserve">
+        </form>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+        <p>Address: 505 Santa Clara Street, Vallejo, CA 94590</p>
+        <p>Opening Hours: Mon - Fri, 9:00 AM - 5:00 PM</p>
+        <p>Email: vallejolib@gmail.com</p>
+    </footer>
+</body>
+</html>
