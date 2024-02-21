@@ -49,6 +49,10 @@ nav a:hover {
     color: black;
 }
 
+main {
+    overflow: hidden;
+}
+
 .content {
     margin: 0 100px;
 }
@@ -100,8 +104,8 @@ main {
 
 .explanation img {
     grid-area: 1 / 10 / 1 / 12;
-    width: 300px;
-    height: 200px;
+    max-width: 300px;
+    height: auto;
     padding: 10px;
 }
 
@@ -165,7 +169,8 @@ main {
 }
 
 .books img {
-    width: 150px;
+    max-width: 150px;
+    height: auto;
 }
 
 .books ul {
@@ -228,11 +233,6 @@ footer {
 
     .content {
         margin: 0 10px;
-    }
-
-    .mainImage img {
-        height: 300px;
-        width: 800px;
     }
 
     footer p {
