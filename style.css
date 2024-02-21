@@ -196,6 +196,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 16px;
 }
 
 .news {
@@ -236,7 +237,7 @@ footer {
 
     footer p {
         margin: 0px 10px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .explanation {
