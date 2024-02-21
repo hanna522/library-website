@@ -1,22 +1,19 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: helvetica;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .top {
     background-color: #001B2E;
-    color: white;
 }
 
 .top h1 {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 20px 0px 20px 100px;
-    margin: 0;
-    text-align: left;
+    font-size: 25px;
+    padding: 0px 100px;
 }
 
 .top h1 a {
@@ -35,6 +32,10 @@ nav li {
     float: left;
 }
 
+nav {
+    padding-left: 80px;
+}
+
 nav a {
     display: block;
     color: white;
@@ -48,31 +49,41 @@ nav a:hover {
     color: black;
 }
 
-.mainImage img {
-    margin: 10px 100px 0px 100px;
-    height: 240px;
-}
-
-.container {
-    margin: 10px 0px;
-    background-color: #F0F0F0;
-}
-
 .content {
+    margin: 0 100px;
+}
+
+.mainImage img {
+    height: 600px;
+    width: 1600px;
+}
+
+footer p {
     margin: 0px 100px;
-    text-align: left;
+    font-size: 14px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: center;
 }
 
 .explanation {
-    margin: 10px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
     background-color: #F0F0F0;;
     color: black;
-    display: flex;
-    padding: 10px 100px;
+    padding: 20px 100px;
 }
 
 .explanation .left {
+    grid-area: 1 / 1 / 1 / 9;
     text-align: left;
+    padding: 0px 20px;
 }
 
 .explanation button {
@@ -88,14 +99,44 @@ nav a:hover {
 }
 
 .explanation img {
-    width: 400px;
+    grid-area: 1 / 10 / 1 / 12;
+    width: 300px;
+    height: 200px;
     padding: 10px;
 }
 
-.search, .reserve {
+.search {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
     margin: 10px 0px 0px;
     background-color: #C1E0FF;
-    padding: 20px 90px;
+    padding: 20px 100px;
+}
+
+
+.searchType1 {
+    grid-column: 1 / auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.searchBox {
+    display: flex;
+}
+
+.searchType2 {
+    grid-column: 3 / auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.searchType2 ul {
+    display: flex;
+    gap: 5px
 }
 
 .reserve {
@@ -116,11 +157,11 @@ nav a:hover {
     margin: 0px 10px;
   }
 
-.catalog, .news {
-    height: auto;
-    min-height: 100%;
-    padding: 0px 100px;
-    margin: 0;
+.books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, max-content);
+    gap: 30px;
 }
 
 .books img {
@@ -132,36 +173,19 @@ nav a:hover {
 }
 
 .books li {
-    margin: 1rem 0;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+    text-align: center;
 }
 
 .books li span {
     display: block;
 }
 
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-section li {
-    padding: 3px;
-}
-
-.searchType2 ul{
-    display: flex;
-}
-
-.searchType2 li {
-    margin-right: 10px;
-}
-
-nav {
-    padding: 0px 80px;
-}
-
 footer {
+    flex-shrink: 0;
     height: 70px;
     position: relative;
     background-color: #001B2E;
@@ -174,7 +198,115 @@ footer {
     justify-content: center;
 }
 
-footer p {
-    margin: 0px 100px;
-    font-size: 14px;
+.news {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+@media (max-width: 640px) {
+    .top h1 {
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    nav a {
+        font-size: 15px;
+    }
+
+    .content {
+        margin: 0 10px;
+    }
+
+    .mainImage img {
+        height: 300px;
+        width: 800px;
+    }
+
+    footer p {
+        margin: 0px 10px;
+        font-size: 10px;
+    }
+
+    .explanation {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .explanation .left {
+        grid-area: 2 / 1 / 2 / 1;
+    }
+
+    .explanation .right {
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .search {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px 100px;
+    }
+    .searchType1 {
+        grid-column: 1 / auto;
+        grid-row: 1 / 1;
+    }
+
+    .searchType2 {
+        grid-column: 1 / auto;
+        grid-row: 2 / 2;
+    }
+
+    .books {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .books li {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .top h1 {
+        font-size: 25px;
+    }
+
+    .books {
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media (min-width: 1024px) {
+    .top h1 {
+        font-size: 30px;
+    }
+
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 100px;
+    }
+}
+
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    padding: 3px;
+}
+
+
