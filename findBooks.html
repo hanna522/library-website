@@ -1,18 +1,15 @@
 <!--DOCTYPE html-->
 
-<!DOCTYPE html>
-
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 
 <body>
-    <section class="top">
-        <header>
-            <h1><a href="home.html">The Vallejo Public Library</a></h1>
-        </header>
+    <header>
+        <h1><a href="home.html">The Vallejo Public Library</a></h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -21,95 +18,95 @@
                 <li><a href="register.html">Register</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
-    <section class="main">
+    <main>
         <section class="explanation">
-            <section class="right">
-                <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png">
-            </section>
-            <section class="left">
+            <div class="left">
                 <h2>Search & Loan books</h3>
                 <p>If you have a library card, you are able to request a book with the card number and book ID</p>
                 <a href="loanBooks.html"><button>Loan Books</button></a>
-            </section>
+            </div>
+            <div class="right">
+                <img src="https://i0.wp.com/cms.babbel.news/wp-content/uploads/2022/01/Most_Beautiful_Libraries.png" alt="Library image">
+            </div>
         </section>
     
         <section class="search">
-            <section class="searchType1">
+            <div class="searchType1">
                 <h4>Search by Title/Author</h4>
                 <form action="/search" method="get" class="searchBox">
                     <input type="text" id="search" name="q" placeholder="Title or Author">
                     <input type="submit" value="Search">
                 </form>    
-            </section>
-            <section class="searchType2">
+            </div>
+            <div class="searchType2">
                 <h4>Search by Category</h4>
                 <ul>
-                    <li><a href="#">Novel</li>
-                    <li><a href="#">Science</li>
-                    <li><a href="#">Essay</li>
-                    <li><a href="#">Fantasy</li>
-                    <li><a href="#">Art</li>
+                    <li><a href="#">Novel</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Essay</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Art</a></li>
                 </ul>    
-            </section>
+            </div>
         </section>
     
         <section class="catalog">
             <ul class="books">
                 <li>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/913C+MR3S5L._AC_UL210_SR195,210_.jpg">
-                    <section class="info">
+                    <div class="info">
                         <span class="Title">Apple tree</span>
                         <span class="Author">John Doe</span>
                         <span class="Category">Novel</span>
                         <span class="BookID">BK0001</span>
                         <span class="AvailableNTotal">2/3</span>    
-                    </section>
+                    </div>
                 </li>
                 <li>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/81AHTyq2wVL._AC_UL210_SR195,210_.jpg">
-                    <section class="info">
+                    <div class="info">
                         <span class="Title">Amazing Bread</span>
                         <span class="Author">Jackson Field</span>
                         <span class="Category">Fantasy</span>
                         <span class="BookID">BK0002</span>
                         <span class="AvailableNTotal">2/2</span>
-                    </section>
+                    </div>
                 </li>
                 <li>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/91jbHTNpy6L._AC_UL420_SR390,420_.jpg">
-                    <section class="info">
+                    <div class="info">
                         <span class="Title">Butterfly Analysis</span>
                         <span class="Author">Miriam Mercedes</span>
                         <span class="Category">Science</span>
                         <span class="BookID">BK0003</span>
                         <span class="AvailableNTotal">3/6</span>    
-                    </section>
+                    </div>
                 </li>
                 <li>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/91jbHTNpy6L._AC_UL420_SR390,420_.jpg">
-                    <section class="info">
+                    <div class="info">
                         <span class="Title">Butterfly Analysis</span>
                         <span class="Author">Miriam Mercedes</span>
                         <span class="Category">Science</span>
                         <span class="BookID">BK0003</span>
                         <span class="AvailableNTotal">3/6</span>    
-                    </section>
+                    </div>
                 </li>
                 <li>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/91jbHTNpy6L._AC_UL420_SR390,420_.jpg">
-                    <section class="info">
+                    <div class="info">
                         <span class="Title">Butterfly Analysis</span>
                         <span class="Author">Miriam Mercedes</span>
                         <span class="Category">Science</span>
                         <span class="BookID">BK0003</span>
                         <span class="AvailableNTotal">3/6</span>    
-                    </section>
+                    </div>
                 </li>
             </ul>
         </section>
-    </section>
+    </main>
 
     <footer>
         <!-- Footer content -->
