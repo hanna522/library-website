@@ -69,7 +69,7 @@ footer p {
 
 main {
     flex-direction: column;
-    margin: 10px 0px 70px 0px;
+    margin: 10px 0px;
     align-items: center;
 }
 
@@ -190,7 +190,7 @@ main {
 footer {
     flex-shrink: 0;
     height: 70px;
-    position: fixed;
+    position: relative;
     background-color: #001B2E;
     color: white;
     text-align: left;
