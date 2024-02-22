@@ -50,7 +50,8 @@ nav a:hover {
 }
 
 main {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto
 }
 
 .content {
@@ -58,8 +59,7 @@ main {
 }
 
 .mainImage img {
-    height: 600px;
-    width: 1600px;
+    max-height: 700px;
 }
 
 footer p {
@@ -68,10 +68,8 @@ footer p {
 }
 
 main {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    margin: 10px 0px;
+    margin: 10px 0px 70px 0px;
     align-items: center;
 }
 
@@ -192,7 +190,7 @@ main {
 footer {
     flex-shrink: 0;
     height: 70px;
-    position: relative;
+    position: fixed;
     background-color: #001B2E;
     color: white;
     text-align: left;
